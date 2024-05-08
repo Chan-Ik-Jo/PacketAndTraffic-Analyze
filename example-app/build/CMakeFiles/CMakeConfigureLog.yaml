@@ -1,0 +1,644 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+      빌드 시작: 2024-05-07 오전 1:37:53
+      
+      1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트(기본 대상)입니다.
+      PrepareForBuild:
+        "Debug\\" 디렉터리를 만들고 있습니다.
+        구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+        "Debug\\CompilerIdC.tlog\\" 디렉터리를 만들고 있습니다.
+      InitializeBuildStatus:
+        "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+        "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate"에 연결(touching)하고 있습니다.
+      "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+      
+      빌드했습니다.
+          경고 0개
+          오류 0개
+      
+      경과 시간: 00:00:00.72
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/3.29.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+      빌드 시작: 2024-05-07 오전 1:37:54
+      
+      1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" 프로젝트(기본 대상)입니다.
+      PrepareForBuild:
+        "Debug\\" 디렉터리를 만들고 있습니다.
+        구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+        "Debug\\CompilerIdCXX.tlog\\" 디렉터리를 만들고 있습니다.
+      InitializeBuildStatus:
+        "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+        "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate"에 연결(touching)하고 있습니다.
+      "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\3.29.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+      
+      빌드했습니다.
+          경고 0개
+          오류 0개
+      
+      경과 시간: 00:00:00.74
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/3.29.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-hsa3n6"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-hsa3n6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-hsa3n6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b5c96.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:37:55
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hsa3n6\\cmTC_b5c96.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_b5c96.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hsa3n6\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_b5c96.dir\\Debug\\cmTC_b5c96.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_b5c96.dir\\Debug\\cmTC_b5c96.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_b5c96.dir\\Debug\\cmTC_b5c96.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5c96.dir\\Debug\\\\" /Fd"cmTC_b5c96.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b5c96.dir\\Debug\\\\" /Fd"cmTC_b5c96.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hsa3n6\\Debug\\cmTC_b5c96.exe" /INCREMENTAL /ILK:"cmTC_b5c96.dir\\Debug\\cmTC_b5c96.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-hsa3n6/Debug/cmTC_b5c96.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-hsa3n6/Debug/cmTC_b5c96.lib" /MACHINE:X64  /machine:x64 cmTC_b5c96.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_b5c96.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hsa3n6\\Debug\\cmTC_b5c96.exe
+        FinalizeBuildStatus:
+          "cmTC_b5c96.dir\\Debug\\cmTC_b5c96.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_b5c96.dir\\Debug\\cmTC_b5c96.tlog\\cmTC_b5c96.lastbuildstate"에 연결(touching)하고 있습니다.
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hsa3n6\\cmTC_b5c96.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.75
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.39.33523.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-h690ii"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-h690ii"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-h690ii'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_727d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:37:56
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h690ii\\cmTC_727d4.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_727d4.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h690ii\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_727d4.dir\\Debug\\cmTC_727d4.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_727d4.dir\\Debug\\cmTC_727d4.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_727d4.dir\\Debug\\cmTC_727d4.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_727d4.dir\\Debug\\\\" /Fd"cmTC_727d4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_727d4.dir\\Debug\\\\" /Fd"cmTC_727d4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h690ii\\Debug\\cmTC_727d4.exe" /INCREMENTAL /ILK:"cmTC_727d4.dir\\Debug\\cmTC_727d4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-h690ii/Debug/cmTC_727d4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-h690ii/Debug/cmTC_727d4.lib" /MACHINE:X64  /machine:x64 cmTC_727d4.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_727d4.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h690ii\\Debug\\cmTC_727d4.exe
+        FinalizeBuildStatus:
+          "cmTC_727d4.dir\\Debug\\cmTC_727d4.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_727d4.dir\\Debug\\cmTC_727d4.tlog\\cmTC_727d4.lastbuildstate"에 연결(touching)하고 있습니다.
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h690ii\\cmTC_727d4.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.71
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.39.33519/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.39.33523.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:44 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-9gt9rq"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-9gt9rq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-9gt9rq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ce157.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:37:57
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\cmTC_ce157.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_ce157.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_ce157.dir\\Debug\\cmTC_ce157.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_ce157.dir\\Debug\\cmTC_ce157.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_ce157.dir\\Debug\\cmTC_ce157.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ce157.dir\\Debug\\\\" /Fd"cmTC_ce157.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\src.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ce157.dir\\Debug\\\\" /Fd"cmTC_ce157.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\src.c"
+          src.c
+        D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\src.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'pthread.h': No such file or directory [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\cmTC_ce157.vcxproj]
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\cmTC_ce157.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\cmTC_ce157.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\src.c(1,10): error C1083: 포함 파일을 열 수 없습니다. 'pthread.h': No such file or directory [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9gt9rq\\cmTC_ce157.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.47
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:44 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-5t0d29"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-5t0d29"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-5t0d29'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a796c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:37:58
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\cmTC_a796c.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_a796c.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_a796c.dir\\Debug\\cmTC_a796c.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_a796c.dir\\Debug\\cmTC_a796c.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_a796c.dir\\Debug\\cmTC_a796c.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a796c.dir\\Debug\\\\" /Fd"cmTC_a796c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a796c.dir\\Debug\\\\" /Fd"cmTC_a796c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\Debug\\cmTC_a796c.exe" /INCREMENTAL /ILK:"cmTC_a796c.dir\\Debug\\cmTC_a796c.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-5t0d29/Debug/cmTC_a796c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-5t0d29/Debug/cmTC_a796c.lib" /MACHINE:X64  /machine:x64 cmTC_a796c.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthreads.lib' 파일을 열 수 없습니다. [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\cmTC_a796c.vcxproj]
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\cmTC_a796c.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\cmTC_a796c.vcxproj"(기본 대상)(1)->
+        (Link 대상) -> 
+          LINK : fatal error LNK1104: 'pthreads.lib' 파일을 열 수 없습니다. [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5t0d29\\cmTC_a796c.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.55
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:44 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-f54ypk"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-f54ypk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-f54ypk'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0ee4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:37:59
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\cmTC_0ee4b.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_0ee4b.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_0ee4b.dir\\Debug\\cmTC_0ee4b.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_0ee4b.dir\\Debug\\cmTC_0ee4b.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_0ee4b.dir\\Debug\\cmTC_0ee4b.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ee4b.dir\\Debug\\\\" /Fd"cmTC_0ee4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ee4b.dir\\Debug\\\\" /Fd"cmTC_0ee4b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\Debug\\cmTC_0ee4b.exe" /INCREMENTAL /ILK:"cmTC_0ee4b.dir\\Debug\\cmTC_0ee4b.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-f54ypk/Debug/cmTC_0ee4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-f54ypk/Debug/cmTC_0ee4b.lib" /MACHINE:X64  /machine:x64 cmTC_0ee4b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthread.lib' 파일을 열 수 없습니다. [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\cmTC_0ee4b.vcxproj]
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\cmTC_0ee4b.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\cmTC_0ee4b.vcxproj"(기본 대상)(1)->
+        (Link 대상) -> 
+          LINK : fatal error LNK1104: 'pthread.lib' 파일을 열 수 없습니다. [D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f54ypk\\cmTC_0ee4b.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.55
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/FindPCAP.cmake:66 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:49 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Performing Test PCAP_LINKS_SOLO"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-36kqjq"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-36kqjq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules;D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus"
+    buildResult:
+      variable: "PCAP_LINKS_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-36kqjq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_77081.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:38:00
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\cmTC_77081.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_77081.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_77081.dir\\Debug\\cmTC_77081.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_77081.dir\\Debug\\cmTC_77081.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_77081.dir\\Debug\\cmTC_77081.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D PCAP_LINKS_SOLO /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_77081.dir\\Debug\\\\" /Fd"cmTC_77081.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\src.cxx"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D PCAP_LINKS_SOLO /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_77081.dir\\Debug\\\\" /Fd"cmTC_77081.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\Debug\\cmTC_77081.exe" /INCREMENTAL /ILK:"cmTC_77081.dir\\Debug\\cmTC_77081.ilk" /NOLOGO "D:\\c++project\\npcap-sdk-1.13\\Lib\\x64\\wpcap.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-36kqjq/Debug/cmTC_77081.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-36kqjq/Debug/cmTC_77081.lib" /MACHINE:X64  /machine:x64 cmTC_77081.dir\\Debug\\src.obj
+          cmTC_77081.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\Debug\\cmTC_77081.exe
+        FinalizeBuildStatus:
+          "cmTC_77081.dir\\Debug\\cmTC_77081.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_77081.dir\\Debug\\cmTC_77081.tlog\\cmTC_77081.lastbuildstate"에 연결(touching)하고 있습니다.
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-36kqjq\\cmTC_77081.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.70
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/FindPCAP.cmake:90 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:49 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for pcap_set_immediate_mode"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-66y0rv"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-66y0rv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules;D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus"
+    buildResult:
+      variable: "HAVE_PCAP_IMMEDIATE_MODE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-66y0rv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_160b6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:38:01
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\cmTC_160b6.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_160b6.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_160b6.dir\\Debug\\cmTC_160b6.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_160b6.dir\\Debug\\cmTC_160b6.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_160b6.dir\\Debug\\cmTC_160b6.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pcap_set_immediate_mode /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_160b6.dir\\Debug\\\\" /Fd"cmTC_160b6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pcap_set_immediate_mode /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_160b6.dir\\Debug\\\\" /Fd"cmTC_160b6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\Debug\\cmTC_160b6.exe" /INCREMENTAL /ILK:"cmTC_160b6.dir\\Debug\\cmTC_160b6.ilk" /NOLOGO "D:\\c++project\\npcap-sdk-1.13\\Lib\\x64\\wpcap.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-66y0rv/Debug/cmTC_160b6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-66y0rv/Debug/cmTC_160b6.lib" /MACHINE:X64  /machine:x64 cmTC_160b6.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_160b6.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\Debug\\cmTC_160b6.exe
+        FinalizeBuildStatus:
+          "cmTC_160b6.dir\\Debug\\cmTC_160b6.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_160b6.dir\\Debug\\cmTC_160b6.tlog\\cmTC_160b6.lastbuildstate"에 연결(touching)하고 있습니다.
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66y0rv\\cmTC_160b6.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.72
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/FindPCAP.cmake:91 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:49 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for pcap_setdirection"
+    directories:
+      source: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-npt2wa"
+      binary: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-npt2wa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus/modules;D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/lib/cmake/pcapplusplus"
+    buildResult:
+      variable: "HAVE_PCAP_DIRECTION"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-npt2wa'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_faf5b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        msbuild 버전 17.9.8+b34f75857(.NET Framework용)
+        빌드 시작: 2024-05-07 오전 1:38:02
+        
+        1 노드의 "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\cmTC_faf5b.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "cmTC_faf5b.dir\\Debug\\" 디렉터리를 만들고 있습니다.
+          구조적 출력을 사용할 수 있습니다. 컴파일러 진단의 서식은 오류 계층 구조를 반영합니다. 자세한 내용은 https://aka.ms/cpp/structured-output을 참조하세요.
+          "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_faf5b.dir\\Debug\\cmTC_faf5b.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_faf5b.dir\\Debug\\cmTC_faf5b.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+          "cmTC_faf5b.dir\\Debug\\cmTC_faf5b.tlog\\unsuccessfulbuild"에 연결(touching)하고 있습니다.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pcap_setdirection /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_faf5b.dir\\Debug\\\\" /Fd"cmTC_faf5b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.39.33523(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pcap_setdirection /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_faf5b.dir\\Debug\\\\" /Fd"cmTC_faf5b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\Debug\\cmTC_faf5b.exe" /INCREMENTAL /ILK:"cmTC_faf5b.dir\\Debug\\cmTC_faf5b.ilk" /NOLOGO "D:\\c++project\\npcap-sdk-1.13\\Lib\\x64\\wpcap.lib" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-npt2wa/Debug/cmTC_faf5b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/CMakeScratch/TryCompile-npt2wa/Debug/cmTC_faf5b.lib" /MACHINE:X64  /machine:x64 cmTC_faf5b.dir\\Debug\\CheckFunctionExists.obj
+          cmTC_faf5b.vcxproj -> D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\Debug\\cmTC_faf5b.exe
+        FinalizeBuildStatus:
+          "cmTC_faf5b.dir\\Debug\\cmTC_faf5b.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_faf5b.dir\\Debug\\cmTC_faf5b.tlog\\cmTC_faf5b.lastbuildstate"에 연결(touching)하고 있습니다.
+        "D:\\c++project\\pcapplusplus-23.09-windows-vs2022-x64-debug\\pcapplusplus-23.09-windows-vs2022-x64-debug\\example-app\\build\\CMakeFiles\\CMakeScratch\\TryCompile-npt2wa\\cmTC_faf5b.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.70
+        
+      exitCode: 0
+...

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6199E6E1-F841-3F73-80E2-0BC035BDFA49}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>example-app</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example-app.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example-app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example-app.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example-app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example-app.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">example-app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example-app.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">example-app</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/include/pcapplusplus" /external:I "D:/c++project/npcap-sdk-1.13/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_REMOTE;WPCAP;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAVE_REMOTE;WPCAP;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Pcap++.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\Packet.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Packet++.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Common++.lib;ws2_32.lib;iphlpapi.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\wpcap.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64\OpenGL32.Lib;E:\Downloads\glfw-3.4.bin.WIN64\lib-vc2022\glfw3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/Debug/example-app.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/Debug/example-app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/include/pcapplusplus" /external:I "D:/c++project/npcap-sdk-1.13/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Pcap++.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\Packet.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Packet++.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Common++.lib;ws2_32.lib;iphlpapi.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\wpcap.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/Release/example-app.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/Release/example-app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/include/pcapplusplus" /external:I "D:/c++project/npcap-sdk-1.13/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Pcap++.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\Packet.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Packet++.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Common++.lib;ws2_32.lib;iphlpapi.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\wpcap.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/MinSizeRel/example-app.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/MinSizeRel/example-app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/include/pcapplusplus" /external:I "D:/c++project/npcap-sdk-1.13/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_REMOTE;WPCAP;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\include\pcapplusplus;D:\c++project\npcap-sdk-1.13\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Pcap++.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\Packet.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Packet++.lib;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\Common++.lib;ws2_32.lib;iphlpapi.lib;D:\c++project\npcap-sdk-1.13\Lib\x64\wpcap.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/RelWithDebInfo/example-app.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/RelWithDebInfo/example-app.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app -BD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build --check-stamp-file D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCXXCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeRCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeSystem.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPCAP.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPacket.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfig.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfigVersion.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets-debug.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app -BD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build --check-stamp-file D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCXXCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeRCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeSystem.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPCAP.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPacket.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfig.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfigVersion.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets-debug.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app -BD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build --check-stamp-file D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCXXCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeRCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeSystem.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPCAP.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPacket.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfig.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfigVersion.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets-debug.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app -BD:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build --check-stamp-file D:/c++project/pcapplusplus-23.09-windows-vs2022-x64-debug/pcapplusplus-23.09-windows-vs2022-x64-debug/example-app/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeCXXCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeRCCompiler.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\3.29.1\CMakeSystem.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPCAP.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\FindPacket.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfig.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusConfigVersion.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets-debug.cmake;D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\lib\cmake\pcapplusplus\PcapPlusPlusTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\imgui\imgui.cpp" />
+    <ClCompile Include="..\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="D:\c++project\pcapplusplus-23.09-windows-vs2022-x64-debug\pcapplusplus-23.09-windows-vs2022-x64-debug\example-app\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\imgui\glfw3.h" />
+    <ClInclude Include="..\imgui\glfw3native.h" />
+    <ClInclude Include="..\imgui\imconfig.h" />
+    <ClInclude Include="..\imgui\imgui.h" />
+    <ClInclude Include="..\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="..\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\imgui\imgui_internal.h" />
+    <ClInclude Include="..\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
