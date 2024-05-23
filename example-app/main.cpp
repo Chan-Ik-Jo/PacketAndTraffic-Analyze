@@ -8,6 +8,7 @@
 #include "Packet.h"
 #include "EthLayer.h"
 #include "TcpLayer.h"
+#include "DnsLayer.h"
 #include "UdpLayer.h"
 #include "string.h"
 #include <math.h>           // sqrtf, powf, cosf, sinf, floorf, ceilf
@@ -15,7 +16,7 @@
 #include "imgui/imgui_impl_glfw.h"
 #include "imgui/imgui_impl_opengl3.h"
 #include <stdio.h>
-#include "imgui/glfw3.h" // Will drag system OpenGL headers
+#include "imgui/glfw3.h" 
 #include <Windows.h>
 #include <sstream>
 #include <chrono>
@@ -23,9 +24,6 @@
 #include <future>
 
 
-
-
-//
 
 static void glfw_error_callback(int error, const char* description)
 {
@@ -45,6 +43,28 @@ struct PacketInfo {
 		packetCount = 0.0f;
 		count = 0.0f;
 	}
+    std::string printTcpFlags(pcpp::TcpLayer* tcpLayer)
+    {
+        std::string result = "";
+        if (tcpLayer->getTcpHeader()->synFlag == 1)
+            result += "SYN ";
+        if (tcpLayer->getTcpHeader()->ackFlag == 1)
+            result += "ACK ";
+        if (tcpLayer->getTcpHeader()->pshFlag == 1)
+            result += "PSH ";
+        if (tcpLayer->getTcpHeader()->cwrFlag == 1)
+            result += "CWR ";
+        if (tcpLayer->getTcpHeader()->urgFlag == 1)
+            result += "URG ";
+        if (tcpLayer->getTcpHeader()->eceFlag == 1)
+            result += "ECE ";
+        if (tcpLayer->getTcpHeader()->rstFlag == 1)
+            result += "RST ";
+        if (tcpLayer->getTcpHeader()->finFlag == 1)
+            result += "FIN ";
+
+        return result;
+    }
 };
 
 auto start = std::chrono::system_clock::now();
@@ -53,37 +73,38 @@ static void onPacketArrives(pcpp::RawPacket* packet, pcpp::PcapLiveDevice* dev, 
 	pcpp::Packet parsedpacket(packet);
 	PacketInfo* packetInfo = (PacketInfo*)cookie;
     packetInfo->count++;
-	//프로그램 실행하고 1초 지나면 vector에 저장 후 count 초기화
+	
 
 	pcpp::IPv4Layer* ipLayer = parsedpacket.getLayerOfType<pcpp::IPv4Layer>();
     //packetInfo->PrinttoConsole();
 	if (ipLayer != NULL) {
-        if (ipLayer->getSrcIPv4Address() == dev->getIPv4Address()) {
-			if (packetInfo->SrcPacketList.size() < 2000) {
-				packetInfo->SrcPacketList.push_back(parsedpacket);
-			}
-            else {
-				packetInfo->SrcPacketList.erase(packetInfo->SrcPacketList.begin());
-				packetInfo->SrcPacketList.push_back(parsedpacket);
-			}   
-        }
-        else if(ipLayer->getDstIPv4Address() == dev->getIPv4Address()) {
-            if (packetInfo->DstPacketList.size() < 2000) {
-                packetInfo->DstPacketList.push_back(parsedpacket);
-			}
-			else {
-				packetInfo->DstPacketList.erase(packetInfo->DstPacketList.begin());
-				packetInfo->DstPacketList.push_back(parsedpacket);
-			}
+        if (ipLayer->getIPv4Header() != nullptr) {
+            if (ipLayer->getSrcIPv4Address() == dev->getIPv4Address()) {
+                if (packetInfo->SrcPacketList.size() < 2000) {
+                    packetInfo->SrcPacketList.push_back(parsedpacket);
+                }
+                else {
+                    packetInfo->SrcPacketList.erase(packetInfo->SrcPacketList.begin());
+                    packetInfo->SrcPacketList.push_back(parsedpacket);
+                }
+            }
+            else if (ipLayer->getDstIPv4Address() == dev->getIPv4Address()) {
+                if (packetInfo->DstPacketList.size() < 2000) {
+                    packetInfo->DstPacketList.push_back(parsedpacket);
+                }
+                else {
+                    packetInfo->DstPacketList.erase(packetInfo->DstPacketList.begin());
+                    packetInfo->DstPacketList.push_back(parsedpacket);
+                }
 
+            }
         }
+
 	}
 	auto end = std::chrono::system_clock::now();
 	std::chrono::duration<double> elapsed_seconds = end - start;
 	if (elapsed_seconds.count() >= 1) {
 		packetInfo->packetCount = packetInfo->count;
-		std::cout << "count : " << packetInfo->count << std::endl;
-		std::cout << elapsed_seconds.count() << std::endl;
 		packetInfo->count = 0.0f;
 		start = std::chrono::system_clock::now();
 	}
@@ -133,6 +154,7 @@ int main(int, char**)
     pcpp::PcapLiveDevice::DeviceConfiguration config;
     config.mode = pcpp::PcapLiveDevice::DeviceMode::Promiscuous;
     config.packetBufferTimeoutMs = 1000;
+
     std::string SrcEthMac;
     std::string DstEthMac;
     std::string SrcIp;
@@ -141,8 +163,10 @@ int main(int, char**)
     std::string DstTcpPort;
     std::string SrcUdpPort;
     std::string DstUdpPort;
+	std::string TcpFlag;
     std::string PacketClass;
     static bool animate =false;
+    
 
 
     // 메인 루프
@@ -203,7 +227,7 @@ int main(int, char**)
             static double refresh_time = 0.0;
             if (!animate || refresh_time == 0.0)
                 refresh_time = ImGui::GetTime();
-            while (refresh_time < ImGui::GetTime()) // Create data at fixed 60 Hz rate for the demo
+            while (refresh_time < ImGui::GetTime()) 
             {
 
                 if (values_offset >= 0 && values_offset < sizeof(values) / sizeof(values[0])) {
@@ -213,7 +237,6 @@ int main(int, char**)
                 }
             }
             {
-                
                 ImGui::PushItemWidth(-1);
                 ImGui::PlotLines("", values, IM_ARRAYSIZE(values), values_offset, "", -1.0f,400.0f, ImVec2(0, 284.0f));
             }
@@ -284,6 +307,7 @@ int main(int, char**)
 							if (tcpLayer != NULL) {
 								SrcTcpPort = std::to_string(tcpLayer->getSrcPort());
 								DstTcpPort = std::to_string(tcpLayer->getDstPort());
+								TcpFlag = packetInfo.printTcpFlags(tcpLayer);
 							}
 							else {
 								SrcTcpPort = "";
@@ -348,17 +372,21 @@ int main(int, char**)
                             }
                             pcpp::TcpLayer* tcpLayer = packetInfo.DstPacketList[item_current2].getLayerOfType<pcpp::TcpLayer>();
                             if (tcpLayer != NULL) {
+								
                                 SrcTcpPort = std::to_string(tcpLayer->getSrcPort());
 								DstTcpPort = std::to_string(tcpLayer->getDstPort());
+								TcpFlag = packetInfo.printTcpFlags(tcpLayer);
                             }
                             else {
                                 SrcTcpPort = "";
 								DstTcpPort = "";
+                                TcpFlag = "";
                             }
                             pcpp::UdpLayer* udpLayer = packetInfo.DstPacketList[item_current2].getLayerOfType<pcpp::UdpLayer>();
                             if (udpLayer != NULL) {
                                 SrcUdpPort = std::to_string(udpLayer->getSrcPort());
 								DstUdpPort = std::to_string(udpLayer->getDstPort());
+                             
                             }
                             else {
                                 SrcUdpPort = "";
@@ -366,7 +394,7 @@ int main(int, char**)
                             }
                         }
 
-                    // Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
+                    
                     if (is_selected)
                         ImGui::SetItemDefaultFocus();
                 }
@@ -378,17 +406,17 @@ int main(int, char**)
             ImGui::SetNextWindowPos(ImVec2(670, 10), ImGuiCond_Always);
             ImGui::SetNextWindowSize(ImVec2(330, 620), ImGuiCond_Once);
             ImGui::Begin("More Information", &More_Information, ImGuiWindowFlags_NoResize | ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoTitleBar);
-            if (ImGui::BeginMenuBar())
-			{
+   //         if (ImGui::BeginMenuBar())
+			//{
 
-                if (ImGui::BeginMenu("File"))
-                {
-                    if (ImGui::MenuItem("Open", "Ctrl+O")) { /* "Open" 메뉴 아이템 선택 시 처리 */ }
-                    if (ImGui::MenuItem("Save", "Ctrl+S")) { /* "Save" 메뉴 아이템 선택 시 처리 */ }
-                    ImGui::EndMenu();
-                }
-                ImGui::EndMenuBar();
-            }
+   //             if (ImGui::BeginMenu("File"))
+   //             {
+   //                 if (ImGui::MenuItem("Open", "Ctrl+O")) { /* "Open" 메뉴 아이템 선택 시 처리 */ }
+   //                 if (ImGui::MenuItem("Save", "Ctrl+S")) { /* "Save" 메뉴 아이템 선택 시 처리 */ }
+   //                 ImGui::EndMenu();
+   //             }
+   //             ImGui::EndMenuBar();
+   //         }
             if (ImGui::CollapsingHeader("Packet Information")) {
 				ImGui::SeparatorText("Packet Information");
 				ImGui::Text("Packet Class : %s", PacketClass.c_str());
@@ -405,6 +433,7 @@ int main(int, char**)
                 if (ImGui::TreeNode("TCP Layer")) {
 					ImGui::Text("Source Port : %s", SrcTcpPort.c_str());
 					ImGui::Text("Destination Port : %s", DstTcpPort.c_str());
+					ImGui::Text("TCP Flags : %s", TcpFlag.c_str());
 					ImGui::TreePop();
                 }
                 if (ImGui::TreeNode("UDP Layer")) {
