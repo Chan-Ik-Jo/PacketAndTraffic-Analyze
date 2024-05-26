@@ -22,13 +22,14 @@
 #include <chrono>
 #include <thread>
 #include <future>
+//imgui + pcapplusplus + glfw header
 
-
-
+// GLFW 에러 콜백 함수
 static void glfw_error_callback(int error, const char* description)
 {
     fprintf(stderr, "GLFW Error %d: %s\n", error, description);
 }
+//PacketInfo 구조체
 struct PacketInfo {
     std::vector<pcpp::Packet> SrcPacketList;
     std::vector<pcpp::Packet> DstPacketList;
@@ -66,9 +67,10 @@ struct PacketInfo {
         return result;
     }
 };
-
+//시간 측정
 auto start = std::chrono::system_clock::now();
 
+//패킷 도착시 호출되는 콜백함수
 static void onPacketArrives(pcpp::RawPacket* packet, pcpp::PcapLiveDevice* dev, void* cookie) {
 	pcpp::Packet parsedpacket(packet);
 	PacketInfo* packetInfo = (PacketInfo*)cookie;
@@ -179,6 +181,7 @@ int main(int, char**)
         ImGui::NewFrame();
 
         // ImGui 내용 여기에 작성
+		//device list 창
         if (DeviceListBegin) {
             static int Device_idx = -1;
 			ImGui::SetNextWindowPos(ImVec2(230,100), ImGuiCond_Always);
@@ -217,6 +220,7 @@ int main(int, char**)
             }
             ImGui::End();
         }
+		//패킷 트래픽 그래프
         if (Packet_Traffic_Graph) {
 
             ImGui::SetNextWindowPos(ImVec2(10, 10), ImGuiCond_Always);
@@ -242,6 +246,7 @@ int main(int, char**)
             }
             ImGui::End();
         }
+		//패킷 로그
         if (Packet_Log) {
             ImGui::SetNextWindowPos(ImVec2(10, 320), ImGuiCond_Always);
             ImGui::SetNextWindowSize(ImVec2(650, 310), ImGuiCond_Once);
@@ -402,6 +407,7 @@ int main(int, char**)
             }
             ImGui::End();
         }
+        //패킷 상세 정보 와 네트워크 어뎁터 상세 정보
         if (More_Information) {
             ImGui::SetNextWindowPos(ImVec2(670, 10), ImGuiCond_Always);
             ImGui::SetNextWindowSize(ImVec2(330, 620), ImGuiCond_Once);
