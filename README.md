@@ -41,4 +41,4 @@
 
 ---
 ## 실행 화면
-
+<img width="100%" src="https://github.com/user-attachments/assets/c8f01b27-8c88-4dcf-8cd9-ca9a3479dc45"/>
